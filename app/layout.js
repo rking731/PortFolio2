@@ -1,6 +1,7 @@
 import { Outfit,Ovo } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "next-themes";
+import Script from "next/script";
 
 const ovo = Ovo({
   subsets: ["latin"],
@@ -23,6 +24,7 @@ export default function RootLayout({ children }) {
       <body className={`${outfit.className} ${ovo.className} antialiased leading-8 overflow-x-hidden`}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
             {children}
+            <Script src="//code.tidio.co/spvr8m4muxpbhzhyq0tsboq0wnrstijo.js" strategy="afterInteractive" />
             </ThemeProvider>
       </body>
     </html>
