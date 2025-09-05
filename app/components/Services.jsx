@@ -17,7 +17,7 @@ const Services = () => {
        className='grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] gap-6 my-10'>
          {serviceData.map(({icon,title,description,link},index)=>(
             <motion.div whileHover={{scale:1.05}} key={index}
-            className='border bg-white border-gray-400 rounded-lg px-8 py-12 hover:bg-red-200 hover:-translate-y-1 duration-500 
+            className='border bg-white border-gray-400 rounded-lg px-8 py-12 hover:bg-red-200 hover:-translate-y-1 duration-500 active:shadow-[4px_4px_0_#000] active:bg-red-200
                                 hover:shadow-[4px_4px_0_#000] cursor-pointer'>
                 <Image alt='' src={icon} className='w-10' />
                 <h3 className='text-lg my-4 text-gray-700'>{title}</h3>

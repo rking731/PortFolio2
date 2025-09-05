@@ -19,8 +19,8 @@ const About = () => {
 </p>
                         <motion.ul initial={{opacity:0}} whileInView={{opacity:1}} transition={{duration: 0.8, delay:1}}  className='grid  grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl'>
                             {infoList.map(({icon,iconDark,title,description},index)=>(
-                                <motion.li whileHover={{scale:1.05}} className='border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer bg-white hover:bg-red-200 hover:-translate-y-1 duration-500 
-                                hover:shadow-[4px_4px_0_#000] ' key={index}>
+                                <motion.li whileHover={{scale:1.05}} className='border-[0.5px]  border-gray-400 rounded-xl p-6 cursor-pointer bg-white hover:bg-red-200 active:shadow-[4px_4px_0_#000] active:bg-red-200  hover:-translate-y-1 duration-500 
+                                hover:shadow-[4px_4px_0_#000]' key={index}>
                                     <Image alt={title} src={icon} className='w-7 mt-3'/>
                                     <h3 className='my-4 font-semibold text-black'>{title}</h3>
                                     <p className='text-black/80 text-sm'>{description}</p>
@@ -31,7 +31,7 @@ const About = () => {
                         <motion.h4 whileHover={{scale:1.1}}  className='my-6  font-Ovo'>Tools I use</motion.h4>
                         <motion.ul initial={{opacity:0}} whileInView={{opacity:1}} transition={{duration: 0.6, delay:1}}  className='flex items-center gap-3 sm:gap-5'>
                             {toolsData.map((tool,index)=>(
-                                <motion.li initial={{opacity:0 , y:-20}} whileInView={{opacity:1 , y:0}} transition={{duration: 0.5, delay:0.3}}  className='flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer
+                                <motion.li initial={{opacity:0 , y:-20}} whileInView={{opacity:1 , y:0}} transition={{duration: 0.5, delay:0.3}}  className='flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer  active:bg-[#ff004f]
                                 hover:-translate-y-1 duration-500  hover:bg-[#ff004F]'
                                  key={index}>
                                     <Image alt='Tool' src={tool} className='w-5 sm:w-7'/>

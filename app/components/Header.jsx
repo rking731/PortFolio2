@@ -24,7 +24,7 @@ const Header = () => {
          href="#contact" className='px-10 py-3 border border-white rounded-full bg-black text-white flex items-center gap-2 hover:-translate-y-1 duration-500'>Contact me <Image alt='' src={assets.right_arrow_white} className='w-4' /> </motion.a>
        <motion.a target="_blank"  initial={{y:30,opacity:0}} whileInView={{y:0,opacity:1}} transition={{duration:0.6,delay:1.2}}
          href="/sample-resume.pdf" download 
-        className='px-10 py-3 border rounded-full border-gray-500 flex items-center gap-2 hover:-translate-y-1 bg-white text-black  hover:bg-red-200  hover:shadow-[4px_4px_0_#000] duration-500'>My resume <Image alt='' src={assets.download_icon} className='w-4' /> </motion.a>
+        className='px-10 py-3 border rounded-full border-gray-500 flex items-center gap-2 hover:-translate-y-1 bg-white text-black  hover:bg-red-200  hover:shadow-[4px_4px_0_#000] duration-500 active:shadow-[4px_4px_0_#000] active:bg-red-200'>My resume <Image alt='' src={assets.download_icon} className='w-4' /> </motion.a>
        </div>
     </div>
   )

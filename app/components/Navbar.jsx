@@ -62,7 +62,7 @@ const Navbar = () => {
           </button>
 
           <a className='hidden lg:flex items-center gap-3 px-10
-            py-2.5 border border-gray-500 rounded-full ml-4 font-bold bg-white text-black  hover:bg-red-200  hover:shadow-[4px_4px_0_#000] hover:text-black hover:-translate-y-1 duration-500' href="#contact">Contact <Image alt='' src={assets.arrow_icon} className='w-3' /></a>
+            py-2.5 border border-gray-500 rounded-full ml-4 font-bold bg-white text-black  hover:bg-red-200  hover:shadow-[4px_4px_0_#000] hover:text-black hover:-translate-y-1 duration-500 active:shadow-[4px_4px_0_#000] active:bg-red-200' href="#contact">Contact <Image alt='' src={assets.arrow_icon} className='w-3' /></a>
 
           <button className='block md:hidden ml-3 icon1' onClick={openMenu}>
             <Image alt='' src={theme=== "dark"? assets.menu_white :assets.menu_black} className='w-6 cursor-pointer' />

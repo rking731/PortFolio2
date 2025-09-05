@@ -38,7 +38,16 @@
 .scroll::-webkit-scrollbar{
     display: none;
 }
-
+@media (max-width:750mx) {
+    .list{
+        transition: background 0.5s ;
+    }
+    .list:hover{
+        background-color: #ff004f;
+        transform: translateY(-10px);
+    }
+    
+}
     
 
 
