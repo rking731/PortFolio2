@@ -20,7 +20,7 @@ const About = () => {
                         <motion.ul initial={{opacity:0}} whileInView={{opacity:1}} transition={{duration: 0.8, delay:1}}  className='grid  grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl'>
                             {infoList.map(({icon,iconDark,title,description},index)=>(
                                 <motion.li whileHover={{scale:1.05}} className='border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer bg-white hover:bg-red-200 hover:-translate-y-1 duration-500 
-                                hover:shadow-[4px_4px_0_#000]' key={index}>
+                                hover:shadow-[4px_4px_0_#000] ' key={index}>
                                     <Image alt={title} src={icon} className='w-7 mt-3'/>
                                     <h3 className='my-4 font-semibold text-black'>{title}</h3>
                                     <p className='text-black/80 text-sm'>{description}</p>
