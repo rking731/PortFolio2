@@ -24,7 +24,7 @@ const Work = () => {
                             <h2 className='font-semibold text-black'>{project.title}</h2>
                             <p className='text-sm text-gray-700 '>{project.description}</p>
                            </div>
-                           <div className='border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition'>
+                           <div className='border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 group-active:bg-lime-300 transition'>
                            <a target="_blank" href={project.link}> <Image alt='send icon' src={assets.send_icon} className='w-5' /> </a>
                            </div>
                           </motion.div>
@@ -33,7 +33,7 @@ const Work = () => {
                     ))}
                 </motion.div>
                 <motion.a initial={{opacity:0}} whileInView={{opacity:1}} transition={{duration: 0.5,delay:1.1}} href="" className='w-max flex items-center justify-center gap-2 
-                border-[0.5px] font-bold border-gray-700 rounded-full py-3 px-10 mx-auto my-20 bg-white text-black  hover:bg-red-200 hover:-translate-y-1 duration-500 hover:shadow-[4px_4px_0_#000]'>Show more <Image alt='Right-arrow' src={assets.right_arrow_bold} className='w-4'/> </motion.a>
+                border-[0.5px] font-bold border-gray-700 rounded-full py-3 px-10 mx-auto my-20 bg-white text-black  hover:bg-red-200 hover:-translate-y-1 active:shadow-[4px_4px_0_#000] active:bg-red-200 duration-500 hover:shadow-[4px_4px_0_#000]'>Show more <Image alt='Right-arrow' src={assets.right_arrow_bold} className='w-4'/> </motion.a>
     </motion.div>
   )
 }
