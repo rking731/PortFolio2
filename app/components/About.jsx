@@ -15,7 +15,7 @@ const About = () => {
                     <Image alt='user' src={assets.profile4_img} className='w-full rounded-3xl' />
                 </motion.div>
                 <motion.div initial={{opacity:0}} whileInView={{opacity:1}} transition={{duration: 0.6, delay:0.8}}  className='flex-1'>
-                    <p className='mb-10 max-w-2xl font-Ovo'>I’m Kingshuk Roy, a passionate Web Developer and Designer from Paschim Medinipur, West Bengal. Currently, I’m in my second year at Jadavpur University, where I’m sharpening my technical and creative skills. I love building modern, user-friendly websites and enjoy solving mathematical problems in my free time. As a self-motivated learner, I’m always ready to explore new ideas and grow as a developer.
+                    <p className='mb-10 max-w-2xl mx-auto font-Ovo'>I’m Kingshuk Roy, a passionate Web Developer and Designer from Paschim Medinipur, West Bengal. Currently, I’m in my second year at Jadavpur University, where I’m sharpening my technical and creative skills. I love building modern, user-friendly websites and enjoy solving mathematical problems in my free time. As a self-motivated learner, I’m always ready to explore new ideas and grow as a developer.
 </p>
                         <motion.ul initial={{opacity:0}} whileInView={{opacity:1}} transition={{duration: 0.8, delay:1}}  className='grid  grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl'>
                             {infoList.map(({icon,iconDark,title,description},index)=>(

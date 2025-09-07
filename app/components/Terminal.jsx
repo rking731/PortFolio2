@@ -51,7 +51,7 @@ export default function Terminal() {
   };
 
   return (
-    <motion.div initial={{opacity:0}} whileInView={{opacity:1}} transition={{duration: 1}} id="Terminal" className="bg-red-200 scroll mb-15 text-black w-[60%] mx-auto font-mono p-4 rounded-2xl h-80  max-w-2xl overflow-y-auto shadow-lg">
+    <motion.div initial={{opacity:0}} whileInView={{opacity:1}} transition={{duration: 1}} id="Terminal" className="bg-red-200 scroll mb-15 text-black lg:w-[60%] w-[80%] mx-auto font-mono p-4 rounded-2xl h-80  max-w-2xl overflow-y-auto shadow-lg">
       {output.map((line, i) => (
         <div key={i}>{line}</div>
       ))}
