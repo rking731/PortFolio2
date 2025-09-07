@@ -6,7 +6,7 @@ import { motion } from "motion/react"
 
 const Header = () => {
   return (
-    <div className='w-11/12 max-w-3xl text-center mx-auto  h-screen flex flex-col items-center justify-center gap-4 '>
+    <div className='w-11/12  max-w-3xl text-center mx-auto  h-screen flex flex-col items-center justify-center gap-4 '>
       <motion.div initial={{scale:0}} whileInView={{scale:1}} whileHover={{scale:1.2}} transition={{duration:0.8,type:'spring',stiffness:100}}
       className='mt-40 cursor-pointer'>
        <a href="https://www.instagram.com/kingshuk8231?igsh=MWlxamVtODNvaHFrdw==" target="_blank"> <Image alt='' src={assets.profile2_img} className='rounded-full w-32 ' /> </a>
