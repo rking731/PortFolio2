@@ -86,10 +86,10 @@ export const assets = {
 
 export const workData = [
     {
-        title: 'First Frontend project',
-        description: 'Html,Css',
+        title: 'PrepWise Frontend site',
+        description: 'Next-JS,Tailwindcss',
         bgImage: '/work-1.png',
-        link:'https://leafy-chimera-c5aecc.netlify.app/',
+        link:'https://interview-ai-kohl-beta.vercel.app/',
     },
     {
         title: 'First Portfolio site',
